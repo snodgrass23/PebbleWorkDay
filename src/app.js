@@ -4,19 +4,18 @@
  * This is where you write your app.
  */
 
-var Pebble = require('pebble');
 var UI = require('ui');
 var Vector2 = require('vector2');
 
 var tokenString = 'test';
-Pebble.getTimelineToken(
-  function (token) {
-    tokenString = 'My timeline token is ' + token
-  },
-  function (error) {
-    tokenString = 'Error getting timeline token: ' + error
-  }
-);
+// Pebble.getTimelineToken(
+//   function (token) {
+//     tokenString = 'My timeline token is ' + token
+//   },
+//   function (error) {
+//     tokenString = 'Error getting timeline token: ' + error
+//   }
+// );
 
 var main = new UI.Card({
   title: 'Pebble.js',
